@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thompson Building Services | Trusted Builders in Chesterfield | Extensions & Conversions</title>
+<meta name="description" content="Thompson Building Services — Chesterfield builders with a perfect 5.0★ Google rating. Garage conversions, porches, brickwork, roofing & renovations. Call 07775 892442.">
+<style>
+:root{
+  --primary:#0d1b2a;
+  --accent:#f4a623;
+  --text:#374151;
+  --bg:#ffffff;
+  --bg-alt:#f8f9fa;
+  --card-bg:#ffffff;
+  --border:#e5e7eb;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:var(--text);font-size:1rem;line-height:1.6;background:var(--bg)}
+img{max-width:100%;display:block}
+section{padding:80px 24px}
+@media(max-width:768px){section{padding:48px 16px}}
+h2.section-title{font-size:2rem;font-weight:700;text-align:center;color:var(--primary);padding-bottom:12px;border-bottom:4px solid var(--accent);display:table;margin:0 auto 16px}
+.section-sub{text-align:center;color:#6b7280;margin-bottom:48px}
+.btn{display:inline-block;padding:14px 28px;border-radius:8px;font-weight:600;text-decoration:none;transition:all .2s ease;border:2px solid transparent;cursor:pointer}
+.btn-accent{background:var(--accent);color:var(--primary)}
+.btn-accent:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.btn-outline{border-color:#fff;color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,.12)}
+
+header{position:sticky;top:0;z-index:100;background:var(--primary);transition:box-shadow .2s ease}
+header.scrolled{box-shadow:0 4px 14px rgba(0,0,0,.35)}
+.nav-wrap{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{color:#fff;font-weight:800;font-size:1.2rem;text-decoration:none;letter-spacing:.3px}
+.brand span{color:var(--accent)}
+nav.desktop{display:flex;gap:28px;align-items:center}
+nav.desktop a{color:#e5e7eb;text-decoration:none;font-weight:500;font-size:.95rem}
+nav.desktop a:hover{color:var(--accent)}
+.call-btn{background:var(--accent);color:var(--primary);padding:10px 20px;border-radius:8px;font-weight:700;text-decoration:none;white-space:nowrap}
+.hamburger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
+.hamburger span{display:block;width:26px;height:3px;background:#fff;border-radius:2px}
+.mobile-menu{display:none;background:var(--primary);padding:12px 24px 20px;flex-direction:column;gap:4px}
+.mobile-menu a{color:#e5e7eb;text-decoration:none;padding:10px 0;font-weight:500;border-bottom:1px solid rgba(255,255,255,.08)}
+.mobile-menu .call-btn{text-align:center;margin-top:12px;display:block}
+@media(max-width:768px){nav.desktop{display:none}.hamburger{display:flex}.mobile-menu.open{display:flex}}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:90px 24px}
+.hero .slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kenburns 18s ease-in-out infinite}
+@keyframes kenburns{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
+.hero .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.8) 100%)}
+.hero-content{position:relative;z-index:1;max-width:880px}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin-bottom:18px}
+.hero p.sub{color:#e5e7eb;font-size:clamp(1rem,2vw,1.25rem);margin-bottom:32px}
+.hero .ctas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
+.trust-bar{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;padding:8px 18px;border-radius:999px;font-size:.9rem;font-weight:600;backdrop-filter:blur(4px)}
+.pill .star{color:var(--accent)}
+
+.about-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr}}
+.about-text p{margin-bottom:16px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.stat-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:28px 20px;text-align:center;transition:all .2s ease}
+.stat-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.stat-card .num{font-size:2rem;font-weight:800;color:var(--primary)}
+.stat-card .num em{color:var(--accent);font-style:normal}
+.stat-card .lbl{font-size:.9rem;color:#6b7280;font-weight:600}
+
+.services{background:var(--bg-alt)}
+.svc-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:1024px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.svc-grid{grid-template-columns:1fr}}
+.svc-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:32px 26px;transition:all .2s ease}
+.svc-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+.svc-card .icon{font-size:2.2rem;margin-bottom:14px}
+.svc-card h3{color:var(--primary);font-size:1.15rem;margin-bottom:10px}
+.svc-card p{font-size:.95rem}
+
+.work-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:768px){.work-grid{grid-template-columns:1fr}}
+.work-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);overflow:hidden;transition:all .2s ease}
+.work-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+.work-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.work-card .cap{padding:14px 18px;font-size:.92rem;color:#6b7280;font-weight:600}
+.ba-card{position:relative}
+.ba-split{display:flex;aspect-ratio:4/3}
+.ba-half{flex:1;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;position:relative}
+.ba-half.before{background:#333;border-right:3px solid #fff}
+.ba-half.after{background:var(--accent)}
+.ba-label{position:absolute;top:10px;left:10px;background:rgba(0,0,0,.5);padding:3px 10px;border-radius:4px;font-size:.7rem;letter-spacing:1px}
+.demo-badge{position:absolute;top:10px;right:10px;background:var(--primary);color:#fff;font-size:.65rem;padding:4px 10px;border-radius:999px;letter-spacing:.5px;z-index:2}
+
+.reviews{background:var(--bg-alt)}
+.rating-badge{display:flex;justify-content:center;margin-bottom:40px}
+.rating-badge .inner{background:var(--primary);color:#fff;padding:12px 28px;border-radius:999px;font-weight:700;font-size:1.1rem}
+.rating-badge .inner span{color:var(--accent)}
+.rev-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.rev-grid{grid-template-columns:1fr}}
+.rev-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:30px 26px;position:relative;transition:all .2s ease}
+.rev-card:nth-child(2){background:#fffdf5}
+.rev-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+.rev-card .quote{font-size:3rem;color:var(--accent);font-family:Georgia,serif;line-height:1;margin-bottom:8px}
+.rev-card p.body{font-size:.95rem;margin-bottom:18px}
+.rev-card .who{font-weight:700;color:var(--primary)}
+.rev-card .stars{color:var(--accent);letter-spacing:2px;margin-top:4px}
+
+.contact-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:48px}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+.form-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);padding:32px}
+.form-card label{display:block;font-weight:600;font-size:.9rem;color:var(--primary);margin:16px 0 6px}
+.form-card label:first-child{margin-top:0}
+.form-card input,.form-card textarea{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:8px;font:inherit;font-size:.95rem}
+.form-card input:focus,.form-card textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+.form-card button{width:100%;margin-top:22px;background:var(--accent);color:var(--primary);border:none;padding:15px;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;transition:all .2s ease}
+.form-card button:hover{filter:brightness(1.08)}
+.form-note{font-size:.85rem;color:#6b7280;margin-top:14px;text-align:center}
+.info-col h3{color:var(--primary);margin-bottom:10px;font-size:1.05rem}
+.info-block{margin-bottom:26px}
+.info-block a{color:var(--primary);font-weight:600;text-decoration:none}
+.info-block a:hover{color:var(--accent)}
+.map-ph{background:#eef1f4;border:1px solid var(--border);border-radius:8px;height:200px;display:flex;align-items:center;justify-content:center}
+.map-ph a{font-weight:700;color:var(--primary);text-decoration:none}
+.map-ph a:hover{color:var(--accent)}
+
+footer{background:var(--primary);color:#fff;padding:48px 24px}
+.foot-grid{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot-grid .tag{color:#9ca3af;font-size:.9rem;margin-top:4px}
+.socials{display:flex;gap:14px}
+.socials a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;transition:all .2s ease}
+.socials a:hover{background:var(--accent)}
+.socials svg{width:20px;height:20px;fill:#fff}
+.copyright{text-align:center;color:#9ca3af;font-size:.85rem;margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}
+
+.wa-float{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:99;transition:transform .2s ease}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float .tip{position:absolute;right:72px;top:50%;transform:translateY(-50%);background:var(--primary);color:#fff;font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:6px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s ease}
+.wa-float:hover .tip{opacity:1}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="nav-wrap">
+    <a class="brand" href="#home">THOMPSON <span>BUILDING SERVICES</span></a>
+    <nav class="desktop">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="call-btn" href="tel:+447775892442">📞 Call Now</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a class="call-btn" href="tel:+447775892442">📞 Call 07775 892442</a>
+  </div>
+</header>
+
+<section class="hero" id="home" style="padding:0 24px">
+  <img class="slide" src="photos/hero_1.jpg" alt="Open-plan kitchen renovation with LED-lit island by Thompson Building Services, Chesterfield">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Trusted Builders in Chesterfield</h1>
+    <p class="sub">A perfect <strong>5.0★ Google rating</strong> — extensions, garage conversions, porches and renovations by Wayne & Mark. On time, impeccably tidy, built to last.</p>
+    <div class="ctas">
+      <a class="btn btn-accent" href="tel:+447775892442">📞 Call 07775 892442</a>
+      <a class="btn btn-outline" href="https://wa.me/447775892442?text=Hi%2C%20I%20found%20your%20website%20and%20would%20like%20a%20quote." target="_blank" rel="noopener">💬 WhatsApp Us</a>
+    </div>
+    <div class="trust-bar">
+      <div class="pill"><span class="star">★</span> 5.0 (12 reviews)</div>
+      <div class="pill">Fully Insured</div>
+      <div class="pill">On Time, Every Time</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">Chesterfield's 5-Star Building Team</h2>
+  <p class="section-sub">Every single Google review: five stars</p>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>Thompson Building Services is run by Wayne and Mark — a Chesterfield building team whose customers say the same things again and again: <em>always on time</em>, <em>impeccably tidy</em>, and <em>outstanding in their craft</em>.</p>
+      <p>From garage conversions that become offices, gyms and open-plan kitchens, to brick porches that look like they've always been part of the house, the pair handle the full job — foundations, brickwork, roofing and finishing — with the kind of care that earns a perfect 5.0 rating and personal thank-you responses to every review.</p>
+      <p>Covering Chesterfield, Hasland, Brimington, Staveley, Dronfield and the surrounding Derbyshire area. Brilliant value, honest advice, and a site left cleaner than they found it.</p>
+    </div>
+    <div class="stats">
+      <div class="stat-card"><div class="num"><em>5.0</em>★</div><div class="lbl">Perfect Google Rating</div></div>
+      <div class="stat-card"><div class="num">12</div><div class="lbl">5-Star Reviews</div></div>
+      <div class="stat-card"><div class="num"><em>2</em></div><div class="lbl">Craftsmen On Every Job</div></div>
+      <div class="stat-card"><div class="num">S40+</div><div class="lbl">Chesterfield & Surrounds</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-sub">All aspects of domestic building work</p>
+  <div class="svc-grid">
+    <div class="svc-card"><div class="icon">🏗️</div><h3>Extensions</h3><p>Single and double-storey extensions that blend seamlessly with your home — from footings and brickwork through to a fully finished space.</p></div>
+    <div class="svc-card"><div class="icon">🚗</div><h3>Garage Conversions</h3><p>Turn unused garage space into an office, gym or open-plan living area. We handle structural knock-throughs, insulation and finishing.</p></div>
+    <div class="svc-card"><div class="icon">🧱</div><h3>Porches & Brickwork</h3><p>Brick porches, boundary walls, posts and gates — matched to your existing brickwork so well it looks like it's always been there.</p></div>
+    <div class="svc-card"><div class="icon">🏠</div><h3>Roofing & Re-Roofs</h3><p>Full roof replacements and repairs finished neatly alongside our building work — one team for the whole job.</p></div>
+    <div class="svc-card"><div class="icon">🍳</div><h3>Kitchen & Interior Renovations</h3><p>Stunning open-plan kitchens and interior refits, from structural alterations to plastering, tiling and lighting.</p></div>
+    <div class="svc-card"><div class="icon">🌳</div><h3>Garden & Groundworks</h3><p>Foundations, bases, sheds and garden structures — properly built on properly prepared ground.</p></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2 class="section-title">Our Work</h2>
+  <p class="section-sub">Real jobs, real results</p>
+  <div class="work-grid">
+    <div class="work-card">
+      <img src="photos/photo_1.jpg" alt="Bungalow with new grey tiled roof and white render — Chesterfield">
+      <div class="cap">Full re-roof & exterior renovation — Completed Job, Chesterfield</div>
+    </div>
+    <div class="work-card ba-card">
+      <div class="demo-badge">Demo · Innov8 Workflows</div>
+      <div class="ba-split">
+        <div class="ba-half before"><span class="ba-label">BEFORE</span>📷 Before Photo</div>
+        <div class="ba-half after"><span class="ba-label">AFTER</span>📷 After Photo</div>
+      </div>
+      <div class="cap">Your before & after photos would appear here</div>
+    </div>
+    <div class="work-card ba-card">
+      <div class="demo-badge">Demo · Innov8 Workflows</div>
+      <div class="ba-split">
+        <div class="ba-half before"><span class="ba-label">BEFORE</span>📷 Before Photo</div>
+        <div class="ba-half after"><span class="ba-label">AFTER</span>📷 After Photo</div>
+      </div>
+      <div class="cap">Garage → home office conversion — before & after</div>
+    </div>
+    <div class="work-card ba-card">
+      <div class="demo-badge">Demo · Innov8 Workflows</div>
+      <div class="ba-split">
+        <div class="ba-half before"><span class="ba-label">BEFORE</span>📷 Before Photo</div>
+        <div class="ba-half after"><span class="ba-label">AFTER</span>📷 After Photo</div>
+      </div>
+      <div class="cap">UPVC porch → brick porch — before & after</div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <h2 class="section-title">What Customers Say</h2>
+  <div class="rating-badge"><div class="inner">⭐ <span>5.0</span> · 12 Google Reviews</div></div>
+  <div class="rev-grid">
+    <div class="rev-card">
+      <div class="quote">“</div>
+      <p class="body">Mark and Wayne converted our garage into a functional office and gym, placed brick posts with finished gates. They built foundations and a prebought shed in the garden. We're really pleased with the work that was carried out.</p>
+      <div class="who">Bec H</div>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="rev-card">
+      <div class="quote">“</div>
+      <p class="body">Wayne and Mark did a great job building our new porch! They replaced a tired looking UPVC porch with a lovely brick one. It matches the rest of the building perfectly and looks as if it's always been there. We can't fault the workmanship — professional and courteous from start to finish.</p>
+      <div class="who">Pam Butler</div>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="rev-card">
+      <div class="quote">“</div>
+      <p class="body">Wayne and Mark are honestly outstanding in their craft! We had our garage converted with the wall knocked through from the kitchen. From start to finish they were brilliant, conscientious and impeccably tidy.</p>
+      <div class="who">Claire G</div>
+      <div class="stars">★★★★★</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Get a Free Quote</h2>
+  <p class="section-sub">Tell us about your project — we'll get straight back to you</p>
+  <div class="contact-grid">
+    <div class="form-card">
+      <form onsubmit="event.preventDefault();alert('Thanks! This is a demo form — on the live site your enquiry would be emailed straight to Thompson Building Services.');">
+        <label for="f-name">Full Name *</label>
+        <input id="f-name" type="text" required placeholder="Your name">
+        <label for="f-email">Email *</label>
+        <input id="f-email" type="email" required placeholder="you@email.com">
+        <label for="f-phone">Phone (optional)</label>
+        <input id="f-phone" type="tel" placeholder="Your phone number">
+        <label for="f-msg">Message *</label>
+        <textarea id="f-msg" rows="4" required placeholder="Tell us about the job — e.g. garage conversion into a home office"></textarea>
+        <button type="submit">Send Enquiry →</button>
+      </form>
+      <p class="form-note">We aim to respond within 24 hours. For urgent jobs call us directly.</p>
+    </div>
+    <div class="info-col">
+      <div class="info-block">
+        <h3>📍 Area Covered</h3>
+        <p>Chesterfield & surrounding Derbyshire — Hasland, Brimington, Staveley, Dronfield, Clay Cross and more</p>
+      </div>
+      <div class="info-block">
+        <h3>📞 Phone</h3>
+        <p><a href="tel:+447775892442">07775 892442</a></p>
+      </div>
+      <div class="info-block">
+        <h3>🕗 Opening Hours</h3>
+        <p>Monday – Friday: from 8:00 am<br>Saturday: by arrangement<br>Sunday: closed</p>
+      </div>
+      <div class="map-ph">
+        <a href="https://www.google.com/maps/place/Thompson+Building+Services+(builders)/@53.2469915,-1.4400507,13z/" target="_blank" rel="noopener">📍 Find Us on Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="brand" style="font-size:1.3rem">THOMPSON <span style="color:var(--accent)">BUILDING SERVICES</span></div>
+      <div class="tag">5-star building work across Chesterfield & Derbyshire</div>
+    </div>
+    <div class="socials">
+      <a href="#" title="Coming soon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="#" title="Coming soon" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm7.85-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z"/></svg></a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Thompson Building Services. Demo site by Innov8 Workflows.</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/447775892442?text=Hi%2C%20I%20found%20your%20website%20and%20would%20like%20a%20quote." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="tip">Chat on WhatsApp</span>
+  <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.69.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.84 9.84 0 0 1-1.51-5.26c0-5.45 4.43-9.88 9.89-9.88a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.43 9.88-9.88 9.88zm8.41-18.29A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.33.16 11.89c0 2.1.55 4.14 1.59 5.94L.07 24l6.31-1.65a11.88 11.88 0 0 0 5.67 1.44h.01c6.55 0 11.89-5.33 11.89-11.89 0-3.18-1.24-6.16-3.49-8.4z"/></svg>
+</a>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+const burger = document.getElementById('hamburger');
+const menu = document.getElementById('mobileMenu');
+burger.addEventListener('click', () => menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+</script>
+</body>
+</html>
